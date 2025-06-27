@@ -1,0 +1,22 @@
+name: "IndexNow"
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    # 每4小时运行一次（UTC时间）
+    - cron: '0 */4 * * *'
+jobs:
+  check-and-submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: submit-to-bing
+        uses: bojieyang/indexnow-action@v2
+        with:
+          sitemap-location: "https://www.zhangtv.cc/rss/sogou.xml"
+          endpoint: "www.bing.com"
+          since: 4
+          since-unit: "hour"
+          limit: 10
+          key: ${{ secrets.INDEXNOW_KEY }}
+          key-location: ${{ secrets.INDEXNOW_KEY_LOCATION }}
