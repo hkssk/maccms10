@@ -372,7 +372,7 @@ input[type=number]{-moz-appearance:textfield}
 .actor-content img{display:block;margin-top:15px;margin-bottom:15px}
 .actor-content h1,.actor-content h2,.actor-content h3{font-size:18px;margin-top:15px;margin-bottom:15px;border-left:2px solid var(--theme-color);padding-left:8px}
 .ewave-comment-form,.ewave-comment-item-list{padding-left:0;padding-right:0}
-.img-wrapper{display:block;padding-bottom:130%;background-image:url("../images/load.gif")}
+.img-wrapper{display:block;padding-bottom:130%;background-image:url("../images/load.png")}
 .img-wrapper.circle{padding-bottom:100%}
 .img-wrapper.h{padding-bottom:50%}
 .swiper-button-next::after,.swiper-button-prev::after{display:none}
