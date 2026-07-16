@@ -136,8 +136,8 @@ input[type=number]{-moz-appearance:textfield}
 .fixedbar-fixed-bar .fixedbar-top-link{display:block;width:100%;height:100%;position:absolute;left:0;top:0}
 .fixedbar-fixed-bar .skin-switch a{font-size:18px;height:40px;line-height:40px;color:var(--theme-text-color)}
 .fixedbar-fixed-bar .skin-switch:hover{opacity:.8}
-.skin-switch a.light,[data-theme="1"] .skin-switch a.dark,.header .a3 .item.skin-switch a.light,[data-theme="1"] .header .a3 .item.skin-switch a.dark{display:none}
-[data-theme="1"] .skin-switch a.light,.skin-switch a.dark,[data-theme="1"] .header .a3 .item.skin-switch a.light,.header .a3 .item.skin-switch a.dark{display:block}
+.skin-switch a.light,[data-theme="0"] .skin-switch a.dark,.header .a3 .item.skin-switch a.light,[data-theme="0"] .header .a3 .item.skin-switch a.dark{display:none}
+[data-theme="0"] .skin-switch a.light,.skin-switch a.dark,[data-theme="0"] .header .a3 .item.skin-switch a.light,.header .a3 .item.skin-switch a.dark{display:block}
 .links-box,.star-box,.vod-list,.vod-list-tv,.vod-topic{}
 .links-box h2,.star-box h2,.vod-list h2,.vod-list-tv h2,.vod-topic h2,.art-box h2,.comment-list h2{width:100%;font-size:18px;line-height:40px;overflow:hidden}
 .star-box h2 .type,.vod-list h2 .type,.vod-list-tv h2 .type,.art-box h2 .type{position:relative;display:inline-block;box-sizing:border-box;margin:0;padding-left:0;list-style:none;float:right}
