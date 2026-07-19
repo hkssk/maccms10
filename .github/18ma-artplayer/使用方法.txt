@@ -1,0 +1,18 @@
+
+将下载的苹果cms插件解压后拷贝至苹果cms系统根目录内
+
+登录苹果cms管理后台 - 视频 - 播放器
+
+选择需要解析的资源站编码，如：mgm3u8，然后选择“编辑”-“播放器代码”，替换以下代码即可
+
+MacPlayer.HTML = '<iframe width="100%" height="'+MacPlayer.Height+'" src="/static/player/18ma-artplayer/?url='+MacPlayer.PlayUrl+'" allowtransparency="true" allowfullscreen="true" marginWidth="0" frameSpacing="0" marginHeight="0" frameBorder="0" scrolling="no" vspale="0" noResize></iframe>';
+MacPlayer.Show();
+
+
+--------------------------------------------------------------------------------------------------
+
+
+www.18ma.cn
+
+
+十八码 - 苹果cms模版开发下载、苹果cms使用经验交流，dplayer播放器、弹幕播放器、videojs等M3U8播放器和web播放器二次开发整合以及建站前端开发技术交流源码分享的综合社区，欢迎您的来访与我们一起交流学习进步！

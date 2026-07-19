@@ -1,0 +1,1 @@
+self.importScripts('https://unpkg.com/@swarmcloud/hls@2.14.2/hls-proxy.js')
