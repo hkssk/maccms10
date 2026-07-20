@@ -1,3 +1,4 @@
+// images优化
 // fakeyou.js
 // 依赖jQuery，需在引入本文件前加载jQuery
 //引入<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
