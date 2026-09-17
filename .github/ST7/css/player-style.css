@@ -1,0 +1,81 @@
+/* 播放器操作栏自定义/全局重置：去除默认边距，方便适配 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 操作栏容器：深色背景、横向分布 */
+        .action-bar {
+            background-color: #333; /* 深色背景 */
+            color: #fff; /* 白色文字 */
+            display: flex;
+            justify-content: space-around; /* 均匀分布元素 */
+            align-items: center;
+            padding: 8px 2%; /* 用百分比内边距，适配不同宽度 */
+            width: 100%;
+            /* 溢出时自动换行（小屏关键） */
+            flex-wrap: wrap;
+            gap: 8px 0; /* 换行后上下间距 */
+        }
+
+        /* 每个操作项：图标+文字（超链接样式重置） */
+        .action-item {
+            display: flex;
+            align-items: center;
+            gap: 4px; /* 图标和文字的间距 */
+            font-size: 14px;
+            /* 小屏时平均分配宽度 */
+            flex: 1;
+            justify-content: center;
+            min-width: 80px; /* 最小宽度，避免挤太窄 */
+        }
+
+        /* 超链接样式：去除下划线、继承文字颜色 */
+        .action-item a {
+            color: inherit; /* 继承白色文字 */
+            text-decoration: none; /* 去除下划线 */
+            display: flex;
+            align-items: center;
+            justify-content: center; /* 居中显示 */
+            gap: 4px; /* 保持图标和文字间距 */
+            padding: 6px 8px; /* 扩大点击区域 */
+            border-radius: 4px; /* 圆角优化 */
+            width: 100%; /* 占满父元素宽度，点击更方便 */
+        }
+
+        /* 超链接悬浮效果：浅灰色背景 */
+        .action-item a:hover {
+            background-color: #555;
+        }
+
+        /* 分隔线样式：小屏时隐藏（避免换行后分隔线错位） */
+        .divider {
+            color: #666; /* 浅灰色分隔线 */
+            display: block;
+        }
+
+        /* 媒体查询：适配手机等小屏设备（宽度≤768px） */
+        @media (max-width: 768px) {
+            /* 小屏时文字缩小，图标为主 */
+            .action-item {
+                font-size: 12px;
+            }
+            /* 小屏隐藏分隔线（换行后分隔线无意义） */
+            .divider {
+                display: none;
+            }
+            /* 小屏时点击区域更大 */
+            .action-item a {
+                padding: 8px 4px;
+            }
+            /* 超小屏（≤480px）：只显示图标，隐藏文字 */
+            @media (max-width: 480px) {
+                .action-item a span:last-child {
+                    display: none; /* 隐藏文字，只留图标 */
+                }
+                .action-item {
+                    min-width: 60px; /* 进一步缩小最小宽度 */
+                }
+            }
+        }
